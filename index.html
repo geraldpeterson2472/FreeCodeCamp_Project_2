@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Survey Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="_css/survey.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	
+</head>
+<body>
+
+	
+<header>	
+	<h1 id="title">Survey Form</h1>
+	<p id="description">This survey's purpose is to collect some general preferences of our developers</p>
+</header>
+
+<main>
+<div id="form-wrapper">
+	<form id="survey-form">
+		<div class="row">
+			<div class="labels"><label for="name" id="name-label">* Name:</label></div>
+			<div class="inputData"><input type="text" class="input-field" id="name" placeholder="Enter your name" required></div><br>
+		</div>
+		<div class="row">
+			<div class="labels"><label for="email" id="email-label">* Email:</label></div>
+			<div class="inputData"><input type="email" class="input-field" id="email" placeholder="Enter your email" required></div><br>
+		</div>
+
+		<div class="row">
+			<div class="labels"><label for="age" id="number-label">* Age:</label></div>
+			<div class="inputData"><input type="number" class="input-field" id="number" min="18" max="100" placeholder="Enter your age in numbers" required></div><br>
+		</div>
+
+		<div class="row">
+			<div class="labels"><label for="dropdown">What color text do you like best:</label></div>
+			<div class="inputData"><select id="dropdown" class="input-field">
+					<option value=""></option>
+					<option value="blue">Blue</option>
+					<option value="red">Red</option>
+					<option value="green">Green</option>
+					<option value="black">Black</option>
+				</select>
+			</div><br><br>
+		</div>
+
+		<div class="row">
+			<div class="labels"><label for="browser" id="browser">Which Internet Browser do you like best:</label></div>
+			<div class="inputData"><input type="radio" name="browser" value="explorer">Internet Explorer<br>
+				<input type="radio" name="browser" value="chrome">Chrome<br>
+				<input type="radio" name="browser" value="firefox">FireFox<br>
+				<input type="radio" name="browser" value="safari">Safari<br>
+			</div><br><br>
+		</div>		
+		
+		<div class="row">
+			<div class="labels"><label for="language" id="language">Select the computer languages you want to learn:<label></div>
+			<div class="inputData"><input type="checkbox" name="language1" value="C++">C++<br>
+				<input type="checkbox" name="language2" value="C#">C#<br>
+				<input type="checkbox" name="language3" value="python">Python<br>
+				<input type="checkbox" name="language4" value="JavaScript">JavaScript<br>
+				<input type="checkbox" name="language5" value="Java">Java<br>
+			</div><br><br>
+		</div>
+		<div class="row">
+				
+			<div class="labels"><label for="textarea">Please input any additional comments you would like to say:</label></div>
+			<div class="inputData"><textarea rows="5" cols="40" placeholder="Please enter your comments here"></textarea><br>
+			</div><br>
+		</div><br>
+
+			<button id="submit" type="submit">Submit</button>
+
+
+	</form>
+</div>
+</main>
+
+<footer>
+	<p> Created by <a href="mailto:geraldpeterson2472@yahoo.com">Gerald Peterson</a> </p>
+</footer>
+
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
